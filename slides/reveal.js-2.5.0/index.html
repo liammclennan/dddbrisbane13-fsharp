@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>F#</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Ten Things F# Can Do... and C# Can't</h1>
+					<h3>.net - from YOLO to PRO-LO</h3>
+					<p>
+                        withouttheloop.com
+					</p>
+				</section>
+
+                <section>
+                    <img src="images/sponsors.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+                    <h2>Last year</h2>
+                    <p>
+                        <img src="images/wfpm.png" />
+                    </p>
+                </section>
+
+                <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+                    <p><img src="images/bronze.jpg" /></p>
+                </section>
+                <section>
+                    <p><img src="images/carbon.jpg"></p>
+                </section>
+                <SECTION>
+                    <h1>Does it even matter?</h1>
+                    <h2 class="fragment">no</h2>
+                    <h3 class="fragment">and yes</h3>
+                </SECTION>
+
+                <section>
+                    <h2>So how does a c# programmer level up?</h2>
+                    <p class="fragment"><img src="images/crayons.jpg"/></p>
+                </section>
+
+                <section data-background="#007777">
+                    <h1>get functional</h1>
+                    <h3>with f#</h3>
+                    <img class="fragment" src="images/fsharpgroup.jpg"/>
+                </section>
+
+                <section>
+                    <h2>
+                        1. functions
+                    </h2>
+                    <img  src="images/ralph.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+                    <h2>
+                        2. type inference
+                    </h2>
+                    <img  src="images/fullcsharp.png" />
+                </section>
+
+                <section>
+                    <h2>3. partial application</h2>
+                    <img  src="images/georgebush.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+                    <h2>4. composition</h2>
+                    <img  src="images/lessgrossman.png" />
+                </section>
+
+                <section>
+                    <h2>5. pipe-forward operator |></h2>
+                    <img src="images/dumbdumber.png" />
+                </section>
+
+                <section data-background="#007777">
+                    <h2>6. Tuples</h2>
+                    <h3>and Pattern Matching</h3>
+                    <img src="images/brick.png" />
+                </section>
+
+                <section>
+                    <h2>7. Immutable Data Structures</h2>
+                    <img src="images/beavis.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+                    <h2>8. Quickcheck</h2>
+                    <p>(fscheck)</p>
+                    <img src="images/peter.png" />
+                </section>
+
+                <section>
+                    <h2>9. Algebraic Data Types</h2>
+                    <blockquote>"World's most widely used formal method" - SPJ</blockquote>
+                    <img src="images/napoleon.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+                    <h2>10. Option</h2>
+                    <img src="images/titanic.png"/>
+                </section>
+
+                <section>
+                    <h2>11. Actor Model Concurrency</h2>
+                    <p><img src="images/mike.jpg"/></p>
+
+                    <ul class="fragment">
+                        <li>Erlang</li>
+                        <li>Scala (Akka)</li>
+                        <li>Go</li>
+                        <li>Rust</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>12. Type Providers</h2>
+                    <blockquote>"strongly typed access to connected information sources"</blockquote>
+                    <img src="images/belushi.png" />
+                </section>
+
+                <section data-transition="linear" data-background="#111" data-background-transition="slide">
+                    <h1 style="color: white">?</h1>
+                </section>
+
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: "sky", // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
